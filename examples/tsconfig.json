@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["../src/*"],
+      "web-performance-monitor": ["../src/index"]
+    },
+    "types": ["vite/client"],
+    "jsx": "preserve"
+  },
+  "include": ["./**/*.ts", "./**/*.vue", "./**/*.d.ts"],
+  "exclude": ["node_modules"]
+} 
